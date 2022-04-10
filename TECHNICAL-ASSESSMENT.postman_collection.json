@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "aaf5756c-2127-49a9-8e17-32171ffa26a3",
+		"name": "TECHNICAL-ASSESSMENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"10001\",\r\n    \"name\":\"Jonah Bluesky\",\r\n    \"salary\":\"7563000\",\r\n    \"gradeCode\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/employees/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"10001\",\r\n    \"name\":\"Jonah Bluesky\",\r\n    \"salary\":\"7563000\",\r\n    \"gradeCode\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/employees/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Employee Bonus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/employees/listBonus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"listBonus"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
